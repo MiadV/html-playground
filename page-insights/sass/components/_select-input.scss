@@ -1,0 +1,8 @@
+.select-input {
+  border: none;
+  font-weight: 400;
+
+  &:focus {
+    border: 1px solid $color_secondary;
+  }
+}

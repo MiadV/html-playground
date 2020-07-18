@@ -1,0 +1,49 @@
+.insight-card {
+  border-radius: 1rem;
+  border: 1px solid $border-color;
+  padding: 1.5rem;
+
+  transition: all 0.2s;
+
+  &:hover {
+    box-shadow: $box-shadow-hover;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: flex-end;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+
+  &__stat {
+    font-size: 1.4rem;
+    color: $color-secondary;
+  }
+
+  &__stat-icon {
+    vertical-align: -moz-middle-with-baseline;
+    vertical-align: -webkit-baseline-middle;
+  }
+
+  &__number {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  &--primary {
+    background-color: $color-primary;
+    color: #fff;
+  }
+}

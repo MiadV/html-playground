@@ -1,0 +1,14 @@
+.card {
+  padding: 5rem;
+  background-color: $card-bg-color;
+  border-radius: 4px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &--shadow {
+    box-shadow: $box-shadow-light;
+  }
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Page Insights</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="insights">
+        <div class="card card--shadow">
+          <div class="card__header">
+            <div class="insights__user">
+              <img
+                src="images/avatars/sample.jpg"
+                alt="avatar"
+                class="avatar"
+              />
+              <div class="insights__user-info">
+                <h3>Leo Bailey</h3>
+                <small>@leo_bai &sdot; Entertainment</small>
+              </div>
+            </div>
+            <button class="btn insights__edit-btn">
+              <span class="far fa-edit btn__icon"></span>
+              <span class="btn__label">Edit</span>
+            </button>
+          </div>
+          <div class="divider"></div>
+          <div class="nav-menu">
+            <ul class="nav-menu__nav">
+              <li>
+                <a
+                  href="/#"
+                  class="nav-menu__nav-link nav-menu__nav-link--selected"
+                  >Home</a
+                >
+              </li>
+              <li><a href="/#" class="nav-menu__nav-link">Projects</a></li>
+              <li><a href="/#" class="nav-menu__nav-link">Jobs</a></li>
+              <li><a href="/#" class="nav-menu__nav-link">About</a></li>
+              <li><a href="/#" class="nav-menu__nav-link">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="card__header">
+            <h4>Insights</h4>
+
+            <select name="custom" class="select-input">
+              <option value="1"> May 28 - Jun 24 </option>
+            </select>
+          </div>
+
+          <div class="cards-grid">
+            <div class="card insight-card insight-card--primary">
+              <div class="insight-card__top">
+                <p class="insight-card__title">People Reached</p>
+                <p class="insight-card__stat">
+                  <span class="fas fa-sort-up insight-card__stat-icon"></span>
+                  <small>7%</small>
+                </p>
+              </div>
+              <div class="insight-card__bottom">
+                <span class="insight-card__number">1,090</span>
+                <a href="/#" class="text-btn text-btn--small">
+                  More info <i class="fas fa-chevron-right"></i
+                ></a>
+              </div>
+            </div>
+            <div class="card insight-card">
+              <div class="insight-card__top">
+                <p class="insight-card__title">Post Engagements</p>
+                <p class="insight-card__stat">
+                  <span class="fas fa-sort-up insight-card__stat-icon"></span>
+                  <small>25%</small>
+                </p>
+              </div>
+              <div class="insight-card__bottom">
+                <span class="insight-card__number">305</span>
+              </div>
+            </div>
+            <div class="card insight-card">
+              <div class="insight-card__top">
+                <p class="insight-card__title">Page Likes</p>
+                <p class="insight-card__stat">
+                  <span class="fas fa-sort-up insight-card__stat-icon"></span>
+                  <small>18%</small>
+                </p>
+              </div>
+              <div class="insight-card__bottom">
+                <span class="insight-card__number">13</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

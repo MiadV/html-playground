@@ -1,0 +1,14 @@
+// Colors
+$color_primary: #2f3030;
+$color_secondary: #2cca98;
+
+$text_color_muted: #939794;
+
+$bg_color: #f3f3f2;
+$card_bg_color: #fff;
+
+$border-color: #d0cece;
+
+// Shadows
+$box-shadow-light: 3px 3px 50px lighten($color_primary, 65%);
+$box-shadow-hover: 2px 2px 10px lighten($color_primary, 65%);
