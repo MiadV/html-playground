@@ -1,0 +1,152 @@
+// import fonts
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+// simple reset
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px simplification
+
+  @media screen and (max-width: 720px) {
+    font-size: 50%;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 45%;
+  }
+}
+
+body {
+  background-color: #e8ecf3;
+
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem; // 16px
+  color: #0c1226;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+.container {
+  text-align: center;
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  min-height: 100vh;
+}
+
+.title {
+  margin-top: 8rem;
+  @media screen and (max-width: 600px) {
+    margin-top: 10rem;
+  }
+}
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 3rem;
+  margin: 8rem 0;
+}
+
+.palette-card {
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    box-shadow: 0 1.5rem 4.2rem #a8b2c3;
+    transform: translateY(-0.5rem);
+  }
+
+  &__thumbnail {
+    height: 25rem;
+    width: 100%;
+    border-radius: 0.5rem;
+
+    &--a {
+      background-color: #eeedf0;
+    }
+    &--b {
+      background-color: #a1b5c1;
+    }
+    &--c {
+      background-color: #f9aca7;
+    }
+    &--d {
+      background-color: #68747d;
+    }
+    &--e {
+      background-color: #cf365f;
+    }
+  }
+
+  &__code {
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.btn {
+  font-family: inherit;
+  padding: 1.5rem 3rem;
+  color: #fff;
+  background-color: #7e6cca;
+  border: none;
+  border-radius: 3px;
+  width: 30rem;
+  box-shadow: 0 0.6rem 2rem #7e6cca;
+  cursor: pointer;
+
+  margin-bottom: 1.5rem;
+
+  &:hover,
+  :active {
+    background-color: darken(#7e6cca, 10);
+    transform: translateY(-0.2rem);
+
+    transition: all 0.2s;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.info-box {
+  display: inline-block;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  font-size: 1.2rem;
+  margin: 5rem 0;
+}
+
+.modal-box {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #0c1226;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  box-shadow: 0 1.5rem 4.2rem #a8b2c3;
+
+  @media screen and (max-width: 600px) {
+    padding: 1rem 2rem;
+  }
+}
